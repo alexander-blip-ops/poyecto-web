@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+header{
+    box-shadow: 0 2px 5x rgba(0, 0, 0, 0.1);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+#hero {
+    padding-top: 1rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/port\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: antiquewhite;
+    padding: 0 1rem;
+    
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#propiedades{
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#propiedades h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.propiedades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-feat, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.propiedades-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.propiedades-card img{
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+}
